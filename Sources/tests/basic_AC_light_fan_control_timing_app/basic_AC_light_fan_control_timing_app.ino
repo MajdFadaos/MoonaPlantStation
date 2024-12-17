@@ -67,6 +67,7 @@ void controlPump() {
     digitalWrite(PUMP_PIN, LOW);  // Turn Pump OFF if water level is below 200
   }
 }
+
 void setup() {
   Wire.begin(I2C_ADDRESS); // Initialize in slave mode
   Wire.onRequest(sendData); // Set handler for requests from the master
